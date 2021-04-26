@@ -7,7 +7,7 @@ def get_digits(input):
 
     for i in range(len(input) - 1, -1, -1):
         char = input[i]
-        if char.isnumeric():
+        if ord(char) >= 48 and ord(char) <= 57:
             final_num += int(char) * digit_place
             digit_place *= 10
 
