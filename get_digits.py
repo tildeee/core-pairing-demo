@@ -1,7 +1,12 @@
 import pytest
 
-def get_digits():
-    pass
+def get_digits(input):
+    final_num = ""
+    for char in input:
+        if char.isnumeric():
+            final_num += char
+
+    return int(final_num)
 
 
 def test_get_digits():
